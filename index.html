@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-    <img src="logo.jpg" alt="logo">
+    <img src="images/fieldandfeast-logo.png" alt="logo">
     <h1>Field & Feast</h1>
         <p>Harvested with Care, Served with Elegance</p>
     </header>
@@ -49,35 +50,85 @@
                     </ul>
                         <p>Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.</p>
             </section>
+        </section>
 
-A Gallery of Field & Feast
-Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.
+        <section id="gallery">
 
-(tomatoes image)
-Heirloom tomatoes at peak ripeness.
+            <h2>A Gallery of Field & Feast</h2>
+            <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
 
-(olive-oil image)
-Drizzling golden olive oil over fresh harvest.
+            <section>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="images/tomatoes-600w.jpg">
+                    <source media="(min-width: 400px)"
+                            srcset="images/tomatoes-300w.jpg">
+                    <img src="images/tomatoes-200w.jpg"
+                            alt="large tomatoes">
+                </picture>
+                
+                <p>Heirloom tomatoes at peak ripeness.</p>
 
-(table-setting image)
-Elegant tablescape under the evening sky.
+            </section>
 
-(chef-plating image)
-Artful plating with seasonal ingredients.
+            <section>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="images/olive-oil-600w.jpg">
+                    <source media="(min-width: 400px)"
+                            srcset="images/olive-oil-300w.jpg">
+                    <img src="images/olive-oil-200w.jpg"
+                            alt="olives">
+                </picture>
+                <p>Drizzling golden olive oil over fresh harvest.</p>
+            </section>
 
-(basket image)
-Our monthly basket, curated with care.
+            <section>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="images/table-setting-600w.jpg">
+                    <source media="(min-width: 400px)"
+                            srcset="images/table-setting-300w.jpg">
+                    <img src="images/table-setting-200w.jpg"
+                            alt="table-setting">
+                </picture>
+                <p>Elegant tablescape under the evening sky.</p>
+            </section>
 
-View Our Full Gallery
+            <section>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="images/chef-plating-600w.jpg">
+                    <source media="(min-width: 400px)"
+                            srcset="images/chef-plating-300w.jpg">
+                    <img src="images/chef-plating-200w.jpg"
+                            alt="chef-plating">
+                </picture>
+                <p>Artful plating with seasonal ingredients.</p>
+            </section>
+
+            <section>
+                <picture>
+                    <source media="(min-width: 700px)"
+                            srcset="images/basket-600w.jpg">
+                    <source media="(min-width: 400px)"
+                            srcset="images/basket-300w.jpg">
+                    <img src="images/basket-200w.jpg"
+                            alt="basket">
+                </picture>
+                <p>Our monthly basket, curated with care.</p>
+            </section>
+            <p><a href="#">View Our Full Gallery</a></p>
+        </section>
     </main>
     <footer>
-123 Estate Lane, Wine Country, CA
-(555) 123-4567
-hello@fieldandfeast.com
+        <p>123 Estate Lane, Wine Country, CA</p>
+        <p>(555) 123-4567</p>
+        <p>hello@fieldandfeast.com</p>
 
-Instagram 
-Facebook
-</footer>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+    </footer>
 
 </body>
 </html>
