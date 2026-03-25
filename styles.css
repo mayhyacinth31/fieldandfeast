@@ -78,6 +78,7 @@ h1 {
     font-size: 3em;
     text-align: center;
     padding:1rem;
+    font-weight: bold;
 }
 
 header p {
@@ -245,6 +246,11 @@ footer #p {
 }
 
 @media screen and (max-width: 550px) {
+
+    header img {
+        width: 25%
+    }
+
     #offerings {
         display: flex;
         flex-direction: column;
@@ -258,7 +264,9 @@ footer #p {
 
 @media screen and (min-width: 551px) {
     
-
+    header img {
+        width: 20%;
+    }
     
     #gallery section {
         display: grid;
@@ -272,6 +280,10 @@ footer #p {
 }
 
 @media screen and (min-width: 800px){
+
+    header img {
+        width: 15%;
+    }
 
     main {
         width: 90%;
@@ -292,6 +304,10 @@ footer #p {
 }
 
 @media screen and (min-width: 1200px){
+
+    header img {
+        width: 10%;
+    }
 
     main {
         width: 75%;
