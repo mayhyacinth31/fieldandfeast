@@ -90,6 +90,7 @@ header p {
 header img {
     display: block;
     margin: 0 auto;
+    width: 25%;
 }
 
 nav {
@@ -133,23 +134,6 @@ p {
     margin: 10px;
 }
 
-#offerings {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-#art {
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-#exc {
-    grid-row: 1/2;
-    grid-column: 2/3
-}
-#basket {
-    grid-row: 2/3;
-    grid-column: 1/3;
-}
 
 #offerings > section {
     background-color: var(--olive-green);
@@ -171,7 +155,10 @@ p {
     padding: 1rem;
 }
 
-
+#gallery section {
+    display: flex;
+    flex-direction: column;
+}
 
 #gallery div {
     box-shadow: 0 .5rem 10px 0 grey,
@@ -245,29 +232,31 @@ footer #p {
     padding-top: 2rem;
 }
 
-@media screen and (max-width: 550px) {
 
-    header img {
-        width: 25%
-    }
-
-    #offerings {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #gallery section {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 600px) {
     
     header img {
         width: 20%;
     }
     
+    #offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    #art {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #exc {
+        grid-row: 1/2;
+        grid-column: 2/3
+    }
+    #basket {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
     #gallery section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -279,7 +268,7 @@ footer #p {
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
 
     header img {
         width: 15%;
@@ -290,7 +279,24 @@ footer #p {
         margin: 0 auto;
     }
 
-
+    #offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    #art {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #exc {
+        grid-row: 1/2;
+        grid-column: 2/3
+    }
+    #basket {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    
     #gallery section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -314,9 +320,27 @@ footer #p {
         margin: 0 auto;
     }
 
+    #offerings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #art {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #exc {
+        grid-row: 1/2;
+        grid-column: 2/3
+    }
+    #basket {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
 
     #gallery section {
         display: flex;
+        flex-direction: row;
     }
 
     #gallery img {
